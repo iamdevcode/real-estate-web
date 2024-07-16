@@ -1,0 +1,18 @@
+---
+import Button from '@/components/Buttons/Button.astro'
+// links
+const links = ['Recidencies', 'Our Value', 'Contact Us', 'Get Started']
+---
+
+<nav>
+  <ul>
+    {
+      links.map(link => (
+        <li>
+          <a href="">{link}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <Button title="Contact" />
+</nav>

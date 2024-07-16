@@ -9,13 +9,5 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false
     })
-  ],
-  vite: {
-    resolve: {
-      alias: {
-        '@': '/src',
-        '#': '/public'
-      }
-    }
-  }
+  ]
 })

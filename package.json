@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/react": "^3.6.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/poppins": "^5.0.14",
     "astro": "^4.11.5",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",
