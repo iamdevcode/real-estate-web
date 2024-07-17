@@ -3,7 +3,9 @@ import NavBar from '@/components/NavBar/index.astro'
 import images from '@/picture'
 ---
 
-<header>
-  <img src={images.logo.src} alt="" width="100" alt="logo" />
-  <NavBar />
+<header class="bg-black">
+  <section class="max-w flex-center justify-between padding">
+    <img src={images.logo.src} width="100" alt="logo" />
+    <NavBar />
+  </section>
 </header>

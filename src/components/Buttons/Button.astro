@@ -1,7 +1,10 @@
 ---
-const { title } = Astro.props
+import clsx from 'clsx'
+const { title, otherStyles } = Astro.props
 ---
 
-<button>
+<button
+  class={clsx('px-5 py-2 rounded-md text-white hover:opacity-90', otherStyles)}
+>
   {title}
 </button>

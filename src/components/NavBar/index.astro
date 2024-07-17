@@ -4,15 +4,15 @@ import Button from '@/components/Buttons/Button.astro'
 const links = ['Recidencies', 'Our Value', 'Contact Us', 'Get Started']
 ---
 
-<nav>
-  <ul>
+<nav class="flex-center">
+  <ul class="flex-center text-white">
     {
       links.map(link => (
-        <li>
+        <li class="hover:opacity-90">
           <a href="">{link}</a>
         </li>
       ))
     }
   </ul>
-  <Button title="Contact" />
+  <Button title="Contact" otherStyles="blue-gradient" />
 </nav>
