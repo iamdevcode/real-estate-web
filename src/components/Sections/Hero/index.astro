@@ -1,20 +1,21 @@
 ---
 import Button from '@/components/Buttons/Button.astro'
 import Input from '@/components/Inputs/Input.astro'
+import { Stast } from '@/components/Stats'
 import images from '@/picture'
 import { MapPin } from 'lucide-react'
 ---
 
 <section class="bg-black">
   <div class="max-w flex-end justify-between padding">
-    <article class="basis-2/5 space-y-8">
+    <article class="basis-2/5 space-y-10">
       <h1 class="text-white text-7xl font-semibold relative z-10">
         Discover <br /> Most Suitable <br /> Property
         <span
           class="absolute -z-10 right-[160px] -top-2 rounded-full w-[55px] h-[55px] orange-gradient block"
         ></span>
       </h1>
-      <p class="text-white">
+      <p class="secondary-text text-base">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
         doloremque quam vitae culpa omnis illo? Dolores explicabo temporibus
       </p>
@@ -22,6 +23,11 @@ import { MapPin } from 'lucide-react'
         <MapPin color="#4066ff" size={25} />
         <Input type="text" />
         <Button title="Search" otherStyles="blue-gradient" />
+      </div>
+      <div class="flex-center justify-between">
+        <Stast title="Premiun Products" start={6000} end={9000} client:only />
+        <Stast title="Happy Customers" start={1600} end={2000} client:only />
+        <Stast title="Award Winning" end={28} client:only />
       </div>
     </article>
     <img
